@@ -30,6 +30,8 @@ Google Colab with NVCC Compiler
 ```
 !pip install git+https://github.com/andreinechaev/nvcc4jupyter.git
 %load_ext nvcc4jupyter
+
+
 %%writefile matmul.cu
 #include <stdio.h>
 #include <cuda_runtime.h>
@@ -205,4 +207,5 @@ Thus the program has been executed by using CUDA to mulptiply two matrices. It i
 
 
 ## RESULT:
-Thus the program has been executed by using CUDA to mulptiply two matrices. It is observed that there are variations in host and device elapsed time. Device took ______________time and host took ___________time.
+RESULT:
+Thus the program has been executed by using CUDA to mulptiply two matrices. It is observed that there are variations in host and device elapsed time. Device took 0.000173 time.
